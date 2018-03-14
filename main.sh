@@ -76,7 +76,7 @@ lxd-bindfs-mount() {
     fi
 }
 
-# Start a container and mount it
+# Stop a container and umount it
 lxd-stop() {
     if [ -z "$1" ]; then
         echo "lxd-stop <container name>"
@@ -99,7 +99,7 @@ lxd-stop() {
     fi
 }
 
-# Stop a container and umount it
+# Start a container and mount it
 lxd-start() {
     if [ -z "$1" ]; then
         echo "lxd-start <container name>"
